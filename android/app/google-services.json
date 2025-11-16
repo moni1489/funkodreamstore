@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351688174982",
+    "project_id": "authentication-fds",
+    "storage_bucket": "authentication-fds.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351688174982:android:20da6062fd7edbe8b51007",
+        "android_client_info": {
+          "package_name": "com.example.funkodreamstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW0IFANHmbbxNfCgEE5f1CBX4Mq4_lzNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
