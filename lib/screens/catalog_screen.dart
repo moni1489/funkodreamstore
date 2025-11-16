@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/background_block.dart';
 
 class CatalogScreen extends StatelessWidget {
   const CatalogScreen({super.key});
@@ -7,7 +8,14 @@ class CatalogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Каталог')),
-      body: const Center(child: Text('Страница каталога')),
+      body: BackgroundBlock(
+        child: const Center(
+          child: Text(
+            'В разработке',
+            style: TextStyle(color: Colors.white, fontSize: 18),
+          ),
+        ),
+      ),
     );
   }
 }

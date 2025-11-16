@@ -1,41 +1,47 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
-import 'screens/main_screen.dart';
+import 'screens/home.dart';
 import 'screens/catalog_screen.dart';
 import 'screens/order_screen.dart';
 import 'screens/checklist_screen.dart';
-import 'screens/nft_screen.dart';
 import 'screens/about_us_screen.dart';
 import 'screens/faq_screen.dart';
+import 'screens/nft_screen.dart';
 import 'screens/login.dart';
-import 'screens/home.dart';
+import 'screens/cart_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const MyApp());
+void main() {
+  runApp(const FunkoDreamStoreApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FunkoDreamStoreApp extends StatelessWidget {
+  const FunkoDreamStoreApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Funko Dream Store',
       debugShowCheckedModeBanner: false,
+      title: 'Funko Dream Store',
       theme: ThemeData(
-        primaryColor: const Color(0xFF8C4DEB),
-        scaffoldBackgroundColor: const Color(0xFF24203D),
-        fontFamily: 'ProximaNova',
-        textTheme: const TextTheme(
-          bodyMedium: TextStyle(color: Colors.white),
+        primaryColor: Colors.black,
+        scaffoldBackgroundColor: Colors.transparent,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
+          elevation: 0,
         ),
       ),
-      home: const MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/catalog': (context) => const CatalogScreen(),
+        '/order': (context) => const OrderScreen(),
+        '/checklist': (context) => const ChecklistScreen(),
+        '/about': (context) => const AboutUsScreen(),
+        '/faq': (context) => const FaqScreen(),
+        '/nft': (context) => const NftScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/cart': (context) => const CartScreen(),
+      },
     );
   }
 }
