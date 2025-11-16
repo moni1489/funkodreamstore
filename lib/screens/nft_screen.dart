@@ -35,7 +35,7 @@ class NftScreen extends StatelessWidget {
               const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () {
-                  // Здесь пока ничего не делаем
+
                 },
                 child: const Text('Изучить больше'),
               ),

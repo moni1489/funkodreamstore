@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const TopNavBar(), // <-- убрали onNavTap
+      appBar: const TopNavBar(),
 
       body: Container(
         decoration: const BoxDecoration(

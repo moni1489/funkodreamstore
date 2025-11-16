@@ -19,7 +19,7 @@ class ChecklistScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white, // на градиенте виден текст
+                  color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
               ),
